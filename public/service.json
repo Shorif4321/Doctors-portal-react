@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "ENGINE DIAGNOSTIC",
+        "price": 4000,
+        "time": 4,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, deserunt commodi. Maxime rerum sequi officia!",
+        "img": "https://i.ibb.co/zFDPj6Q/1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "WHEEL ALIGNMENT",
+        "price": 2000,
+        "time": 2,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, deserunt commodi. Maxime rerum sequi officia!",
+        "img": "https://i.ibb.co/QrfFxCS/2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "COMPLETE ANLYSIS",
+        "price": 3000,
+        "time": 1,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, deserunt commodi. Maxime rerum sequi officia!",
+        "img": "https://i.ibb.co/27B6Qd0/6.jpg"
+    },
+    {
+        "id": 4,
+        "name": "OIL CHANGE",
+        "price": 5000,
+        "time": 1,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, deserunt commodi. Maxime rerum sequi officia!",
+        "img": "https://i.ibb.co/RP6c0bY/3.jpg"
+    },
+    {
+        "id": 5,
+        "name": "WASH REPARING",
+        "price": 35000,
+        "time": 2,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, deserunt commodi. Maxime rerum sequi officia!",
+        "img": "https://i.ibb.co/1f9pPjD/5.jpg"
+    },
+    {
+        "id": 6,
+        "name": "BRAKE REPARING",
+        "price": 20000,
+        "time": 8,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, deserunt commodi. Maxime rerum sequi officia!",
+        "img": "https://i.ibb.co/StctzQ2/4.jpg"
+    }
+]
