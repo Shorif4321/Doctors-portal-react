@@ -1,0 +1,36 @@
+[debug] [2021-11-16T15:27:13.588Z] ----------------------------------------------------------------------
+[debug] [2021-11-16T15:27:13.601Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Digital\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-11-16T15:27:13.602Z] CLI Version:   9.22.0
+[debug] [2021-11-16T15:27:13.602Z] Platform:      win32
+[debug] [2021-11-16T15:27:13.602Z] Node Version:  v14.17.1
+[debug] [2021-11-16T15:27:13.627Z] Time:          Tue Nov 16 2021 21:27:13 GMT+0600 (Omsk Standard Time)
+[debug] [2021-11-16T15:27:13.628Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-11-16T15:27:13.638Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2021-11-16T15:27:14.320Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-11-16T15:27:14.321Z] > authorizing via signed-in user (shorifali4321@gmail.com)
+[debug] [2021-11-16T15:27:14.333Z] [iam] checking project doctors-portal-ab729 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-11-16T15:27:14.343Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-11-16T15:27:14.344Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-11-16T15:27:25.449Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Tue, 16 Nov 2021 15:30:13 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-16T15:27:25.473Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/doctors-portal-ab729:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-11-16T15:28:14.859Z] [iam] error while checking permissions, command may fail: FirebaseError: Server Error. socket hang up
+[debug] [2021-11-16T15:28:14.861Z] > refreshing access token with scopes: []
+[debug] [2021-11-16T15:28:14.861Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-11-16T15:28:35.786Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Tue, 16 Nov 2021 15:31:12 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-16T15:28:35.805Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/doctors-portal-ab729 [none]
+[debug] [2021-11-16T15:28:56.921Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/doctors-portal-ab729
+[debug] [2021-11-16T15:29:15.865Z] FirebaseError: Failed to make request to https://firebase.googleapis.com/v1beta1/projects/doctors-portal-ab729
+    at Client.doRequest (C:\Users\Digital\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:213:19)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async Client.request (C:\Users\Digital\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async Object.getFirebaseProject (C:\Users\Digital\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async Object.getDefaultHostingSite (C:\Users\Digital\AppData\Roaming\npm\node_modules\firebase-tools\lib\getDefaultHostingSite.js:8:21)
+    at async requireHostingSite (C:\Users\Digital\AppData\Roaming\npm\node_modules\firebase-tools\lib\requireHostingSite.js:9:18)
+    at async Object.fn (C:\Users\Digital\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\deploy.js:73:9)
+    at async C:\Users\Digital\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:188:17
+[error] 
+[error] Error: Failed to get Firebase project doctors-portal-ab729. Please make sure the project exists and your account has permission to access it.
